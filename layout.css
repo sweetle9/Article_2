@@ -1,6 +1,25 @@
 * {
   box-sizing: border-box;
 }
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  /* border-bottom: 1px solid #aaa; */
+  box-shadow: 0 3px 4px 1px rgba(0,0,0,.1);
+  background: white;
+}
+.menubar a {
+  height: 20px;
+  color: #aaa;
+  text-decoration: none;
+}
+.menubar img {
+  height: 80%;
+  width: auto;
+}
 body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'PT Sans', sans-serif;
 }
 a { color: inherit;
@@ -13,6 +32,9 @@ h1, h2 { font-family: 'PT Sans Caption', sans-serif; font-weight: bold;
 h1 { margin-top: 67px; font-size: 38px; line-height: 45px;
 }
 h1 + p { margin-top: 8px; font-family: 'PT Sans Caption', sans-serif; font-size: 22px; line-height: 32px; color: rgba(0,0,0,.4);
+}
+h2 + hr {
+  margin-top: auto;
 }
 h1 + p + p { margin-top: 30px;
 }
